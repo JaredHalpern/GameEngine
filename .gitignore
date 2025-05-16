@@ -10,6 +10,7 @@
 *.dll
 *.lib
 *.a
+engine
 
 # Compiled binaries
 bin/
