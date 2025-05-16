@@ -1,0 +1,50 @@
+# VS Code settings
+# keep this dir to make life easier bc I'm using VS Code anyway
+#.vscode/
+
+# Build outputs
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.lib
+*.a
+
+# Compiled binaries
+bin/
+build/
+dist/
+
+# SDL2 library files (if dynamically linked)
+*.dylib
+*.so
+
+# CMake & Make artifacts
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+Makefile
+make/
+
+# Debugging files
+*.log
+*.dmp
+
+# Temporary files
+*.tmp
+*.bak
+
+# IDE-specific files
+*.user
+*.suo
+*.ncb
+*.opendb
+*.VC.db
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
