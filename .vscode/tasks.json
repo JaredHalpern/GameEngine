@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build GameEngine",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17",
+                "-Iinclude",
+                "-I/opt/homebrew/include/SDL2",
+                "-L/opt/homebrew/lib",
+                "-lSDL2",
+                "-lSDL2_image",
+                "src/main.cpp",
+                "src/GameEngine.cpp",
+                "src/GameObject.cpp",
+                "-o",
+                "engine"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
