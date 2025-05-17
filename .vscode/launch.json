@@ -1,18 +1,18 @@
 {
+    "version": "2.0.0",
     "configurations": [
         {
-            "name": "C/C++: clang++ build and debug active file",
+            "name": "Launch Engine",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/engine",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: clang++ build active file"
+            "preLaunchTask": "Build GameEngine",
+            "MIMode": "lldb"
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
