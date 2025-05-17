@@ -7,7 +7,7 @@
             "command": "bash",
             "args": [
                 "-c",
-                "clang++ -std=c++17 -I${workspaceFolder}/include -lSDL2_image -L/opt/homebrew/lib $(sdl2-config --cflags --libs) -fcolor-diagnostics -fansi-escape-codes ${workspaceFolder}/src/main.cpp ${workspaceFolder}/src/GameEngine.cpp ${workspaceFolder}/src/GameObject.cpp -o ${workspaceFolder}/engine"
+                "clang++ -std=c++17 -I${workspaceFolder}/include -lSDL2_image -L/opt/homebrew/lib $(sdl2-config --cflags --libs) -fcolor-diagnostics -fansi-escape-codes ${workspaceFolder}/src/*.cpp -o ${workspaceFolder}/engine"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
