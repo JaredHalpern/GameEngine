@@ -6,7 +6,8 @@
                 "${workspaceFolder}/include",
                 "${workspaceFolder}/**",
                 "/opt/homebrew/include/SDL2",
-                "/opt/homebrew/lib"
+                "/opt/homebrew/lib",
+                "/opt/homebrew/include"
             ],
             "defines": [],
             "cStandard": "c17",

@@ -1,10 +1,22 @@
-#include "../include/GameEngine.h"
+#include "GameEngine.h"
 
 int main()
 {
     GameEngine engine("Simple Game", 800, 600);
-    GameObject *player = new GameObject(engine.renderer, "../assets/player.png", 100, 100, 50, 50);
-    engine.addObject(player);
+
+    const char *imagePath = "../assets/player.png";
+    // GameObject *player = new GameObject(engine.renderer, imagePath, 100, 100, 50, 50);
+
+    SDL_Surface *surface = IMG_Load(imagePath);
+
+    if (!surface) {
+        SDL_Log("Failed to load image %s: %s", imagePath, IMG_GetError());
+    } else {
+        GameObject *player = new GameObject(engine.renderer, imagePath, 100, 100, 50, 50);
+        SDL_FreeSurface(surface);
+        engine.addObject(player);
+    }
+
     engine.run();
     return 0;
 }

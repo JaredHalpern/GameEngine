@@ -2,6 +2,7 @@
 #define GAMEENGINE_H
 
 #include <SDL.h>
+#include <SDL_image.h>
 #include <vector>
 #include "GameObject.h"
 

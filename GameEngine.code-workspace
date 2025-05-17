@@ -4,7 +4,13 @@
 			"path": "."
 		}
 	],
-	"settings": {},
+	"settings": {
+		"files.associations": {
+			"**/frontmatter.json": "jsonc",
+			"**/.frontmatter/config/*.json": "jsonc",
+			"vector": "cpp"
+		}
+	},
 	"launch": {
 		"version": "0.2.0",
 		"configurations": [
