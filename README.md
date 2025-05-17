@@ -18,4 +18,4 @@ A simple **C++ game engine** built using **SDL2** for graphics rendering. Design
 
 
 ## Build
-1. ```clang++ -std=c++17 -Iinclude -I/opt/homebrew/include/SDL2 -L/opt/homebrew/lib -lSDL2 -lSDL2_image src/main.cpp src/GameEngine.cpp src/GameObject.cpp -o engine```
+1. (for my specific setup)```bash -c 'clang++ -std=c++17 -I/Users/jared/source/cpp/GameEngine/include -lSDL2_image -L/opt/homebrew/lib $(sdl2-config --cflags --libs) -fcolor-diagnostics -fansi-escape-codes /Users/<username>/source/cpp/GameEngine/src/*.cpp -o /Users/<username>/source/cpp/GameEngine/engine'```
